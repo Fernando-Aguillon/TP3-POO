@@ -1,35 +1,23 @@
-# Código de partida — TP Integrador Unidad 3 (POO)
 
-Este es el **punto de partida** del trabajo práctico. Sin este material no se puede
-resolver la Parte 1.
+# TP Integrador – Programación Orientada a Objetos
 
-## Qué hay adentro
+Trabajo práctico de Unidad 3.
 
-| Archivo | Qué es | ¿Se modifica? |
-|---|---|---|
-| `parte1_diagnostico.py` | El dominio Figura / Polígono / Lado funcionando, pero escrito «con acento de Java». Es el objeto de trabajo: lo vas a diagnosticar y corregir. | **Sí** |
-| `libreria_externa.py` | La clase `PlanoCAD` de un tercero. No hereda de nada tuyo y **no se modifica nunca**. Es el centro de la Parte 4. | **No. Nunca.** |
+## Archivos
+- `figuras.py`: modelo del dominio.
+- `parte1_diagnostico.py`: diagnóstico corregido.
+- `demo_sintomas.py`: reproducción de problemas del diseño original.
+- `main.py`: demostración integradora.
+- `informe.md`: decisiones y justificaciones.
+- `uml/modelo_final.md`: diagrama de clases.
 
-## Cómo ejecutarlo
+## Ejecución
 
+Requiere Python 3.10 o superior.
+
+```bash
+python main.py
+python demo_sintomas.py
 ```
-python parte1_diagnostico.py
-```
 
-Corre de punta a punta sin lanzar un solo error. **No tiene bugs de sintaxis: tiene
-acento.** Lo que hay que encontrar son decisiones de diseño heredadas de Java, no
-excepciones.
-
-## Lo que tenés que encontrar
-
-- **Exactamente 8 java-ismos de diseño.** Ni 7 ni 9: ocho. Siete están en el checklist
-  de la Actividad 4; el octavo no, y esa es justo la diferencia entre *aplicar una lista*
-  y *haber entendido el criterio*.
-- **Ruido sintáctico** (punto y coma al final de línea, comparaciones contra `True`,
-  concatenación con `+` donde va un f-string). También se limpia, pero **no cuenta**
-  dentro de los 8.
-- **`PoligonoRegular` NO cuenta como java-ismo.** Está en el archivo a propósito y es
-  el objeto de la **Parte 3**, no de la Parte 1: ahí se te pide decidir y justificar
-  si su herencia la sostiene el dominio o solo la ceremonia del compilador.
-
-Seguí las consignas completas en el PDF del TP.
+`libreria_externa.py` se utiliza sin modificaciones.
