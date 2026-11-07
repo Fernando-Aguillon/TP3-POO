@@ -1,12 +1,9 @@
-import math
-
-
 """Dominio Figura / Polígono / Lado con Python idiomático."""
 
 class Figura:
     def __init__(self, nombre, color):
-        self._nombre = nombre
-        self._color = color
+        self.nombre = nombre
+        self.color = color
 
     def area(self):
         return 0.0
@@ -95,7 +92,7 @@ if __name__ == "__main__":
     print(f"Perímetro del triángulo: {triangulo.perimetro()}")
     print(f"Perímetro del cuadrado: {cuadrado.perimetro()}")
 
-    print(f"Nombre: {triangulo._nombre}")
+    print(f"Nombre: {triangulo.nombre}")
 
     # Antes: lado.getLongitud()
     # Ahora: lado.longitud
